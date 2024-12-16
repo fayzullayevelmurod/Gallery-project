@@ -161,6 +161,19 @@ body {
   display: inline-block;
   width: 100%;
 }
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  background: transparent;
+  opacity: 1;
+  transform: scale(1) !important;
+}
+.swiper-pagination-bullet-active {
+  background: #000;
+}
 // header
 .header {
   padding-top: 100px;
@@ -312,6 +325,9 @@ footer {
   padding: 80px 0 120px 0;
 }
 .art-work {
+  .swiper-pagination {
+    display: none;
+   }
   &__slider-box {
     display: flex;
     align-items: start;
@@ -512,6 +528,13 @@ footer {
       text-align: left;
     }
   }
+}
+.swiper-container {
+  position: relative;
+}
+.swiper-button-lock {
+  display: block !important;
+  opacity: 1 !important;
 }
 // text-section
 

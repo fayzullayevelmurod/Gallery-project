@@ -1,3 +1,4 @@
+
 // art-swiper
 const artSwiper = new Swiper('.art-slider', {
   slidesPerView: 3.5,
@@ -18,6 +19,7 @@ const artSwiper = new Swiper('.art-slider', {
       slidesPerView: 3.5,
     },
   },
+  watchOverflow: false,
 });
 
 // art-slider-4
@@ -93,6 +95,11 @@ const artWorkSwiper = new Swiper('.art-work__swiper', {
     prevEl: '.art-work-prev',
   },
   effect: "fade",
+  pagination: {
+    el: '.swiper-pagination',   // Paginatsiya elementi
+    clickable: true,            // Kliklash imkoniyati
+    dynamicBullets: true,       // Dinamik o‘lchamli tugmalar
+  },
   // breakpoints: {
   //   0: {
   //     slidesPerView: 1.2,
@@ -115,15 +122,22 @@ let gallerySwiper = new Swiper('.gallery-slider-2', {
     nextEl: '.art-work-next',
     prevEl: '.art-work-prev',
   },
-  // breakpoints: {
-  //   0: {
-  //     slidesPerView: 1.2,
-  //   },
-  //   700: {
-  //     slidesPerView: 2.2,
-  //   },
-  //   900: {
-  //     slidesPerView: 3.5,
-  //   },
-  // },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.3,
+    },
+    700: {
+      slidesPerView: 1.9,
+    },
+  },
+});
+window.addEventListener('load', () => {
+  // Swiper tugmalarini topish
+  const buttons = document.querySelectorAll('.swiper-button-prev, .swiper-button-next');
+
+  buttons.forEach(button => {
+    button.removeAttribute('disabled');
+
+    button.classList.remove('swiper-button-lock');
+  });
 });
