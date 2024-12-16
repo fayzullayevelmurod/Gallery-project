@@ -82,3 +82,26 @@ const seeArtSwiper = new Swiper('.see-art__swiper', {
     },
   },
 });
+
+// art-work__swiper
+const artWorkSwiper = new Swiper('.art-work__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  speed: 700,
+  navigation: {
+    nextEl: '.art-work-next',
+    prevEl: '.art-work-prev',
+  },
+  effect: "fade",
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1.2,
+  //   },
+  //   700: {
+  //     slidesPerView: 2.2,
+  //   },
+  //   900: {
+  //     slidesPerView: 3.5,
+  //   },
+  // },
+});

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <!-- font: Major -->
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+  <!-- slider link -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <!-- css link -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="overflow-hidden">
+
+    <header class="art-work__header text-center">
+      <div class="main-container">
+        <a href="#!">
+          <img class="logo" src="images/logo-2.svg" alt="">
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="art-work">
+        <div class="main-container">
+          <div class="art-work__slider-box">
+            <div class="swiper-container art-work__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="images/big-salvador.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="images/salvador-2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="content-title">Salvador Dali</h2>
+              <h2 class="content-title">Untitled</h2>
+              <p class="desc cs">Original pen and ink drawing in red and black</p>
+              <p class="desc">1950</p>
+              <span class="x-text">×</span>
+              <p class="desc">
+                The drawing was made as a Christmas card for Pope Paul VI in 1963, the year of his election to the papal
+                throne. The dedication on the back reads “To his Holiness Paul VI, devotedly your son”
+              </p>
+              <span class="x-text">×</span>
+              <p class="desc cs">20×11.6 cm</p>
+              <p class="desc cs">Excellent condition</p>
+              <p class="desc cs">Hand-signed in pencil by artist</p>
+              <span class="x-text">×</span>
+              <p class="desc cs">For sale: €20000</p>
+              <a class="outline-btn" href="#!">Inquare</a>
+            </div>
+          </div>
+          <div class="swiper-btns">
+            <button class="art-work-prev">
+              <img src="images/icons/prev-arrow.svg" alt="">
+            </button>
+            <button class="art-work-next">
+              <img src="images/icons/next-arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
+      <button class="mx-auto d-block big-close__btn">
+        <img src="images/icons/close.svg" alt="">
+      </button>
+      <section class="art-section pb-0">
+        <div class="main-container">
+          <h2 class="title-text">Emilio Vedova</h2>
+          <div class="swiper-container art-slider">
+            <button class="white-btn  slider-prev__btn art-slider-prev">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="120" height="120" fill="white" fill-opacity="0.9" />
+                <path d="M66.9121 9L16.0004 59.9117L66.9121 110.823" stroke="url(#paint0_linear_1_294)" />
+                <path class="change-color" d="M49.9414 26L16.0003 59.9411L49.9414 93.8823" stroke="black" />
+                <line class="change-color" x1="16" y1="60" x2="104" y2="60" stroke="black" />
+                <defs>
+                  <lineargradient id="paint0_linear_1_294" x1="118" y1="60" x2="15.8238" y2="60"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0.5" stop-opacity="0" />
+                    <stop offset="1" stop-opacity="0.1" />
+                  </lineargradient>
+                </defs>
+              </svg>
+            </button>
+            <button class="white-btn slider-next__btn art-slider-next">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="120" height="120" fill="#000000E5" fill-opacity="0.9" />
+                <path d="M66.9121 9L16.0004 59.9117L66.9121 110.823" stroke="url(#paint0_linear_1_294)" />
+                <path class="change-color" d="M49.9414 26L16.0003 59.9411L49.9414 93.8823" stroke="#fff" />
+                <line class="change-color" x1="16" y1="60" x2="104" y2="60" stroke="#fff" />
+                <defs>
+                  <lineargradient id="paint0_linear_1_294" x1="118" y1="60" x2="15.8238" y2="60"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0.5" stop-opacity="0" />
+                    <stop offset="1" stop-opacity="0.1" />
+                  </lineargradient>
+                </defs>
+              </svg>
+            </button>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content-slide">
+                  <img class="small-img" src="images/slide-img-2.png" alt>
+                  <h3 class="content-slide__title">Untitled</h3>
+                  <span class="content-slide__status">Lithography <br>
+                    1960</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content-slide">
+                  <img src="images/slider-img-1.png" alt>
+                  <h3 class="content-slide__title">Untitled</h3>
+                  <span class="content-slide__status">Lithography <br>
+                    1960</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content-slide">
+                  <img src="images/slider-img-1.png" alt>
+                  <h3 class="content-slide__title">Untitled</h3>
+                  <span class="content-slide__status">Lithography <br>
+                    1960</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content-slide">
+                  <img src="images/slider-img-1.png" alt>
+                  <h3 class="content-slide__title">Untitled</h3>
+                  <span class="content-slide__status">Lithography <br>
+                    1960</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content-slide">
+                  <img src="images/slider-img-1.png" alt>
+                  <h3 class="content-slide__title">Untitled</h3>
+                  <span class="content-slide__status">Lithography <br>
+                    1960</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="main-container info-box">
+        <button class="mx-auto d-block big-close__btn">
+          <img src="images/icons/close.svg" alt="">
+        </button>
+        <div class="links">
+          <a href="#!">Contacts </a>
+          <span>•</span>
+          <a href="#!">Terms of Use </a>
+          <span>•</span>
+          <a href="#!">Privacy Policy</a>
+        </div>
+        <a class="link-text" href="#!">© A3M Gallery, 2024</a>
+        <span class="x-text">×</span>
+      </div>
+    </footer>
+    <!-- footer -->
+  </div>
+
+  <!-- bootstrap js -->
+  <script src="./libs/bootstrap.bundle.min.js"></script>
+  <!-- slider js -->
+  <script src="./libs/swiper-bundle.min.js"></script>
+  <!-- custom js -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
