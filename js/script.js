@@ -67,8 +67,8 @@ const seeArtSwiper = new Swiper('.see-art__swiper', {
   spaceBetween: 40,
   speed: 700,
   navigation: {
-    nextEl: '.art-slider-next-2',
-    prevEl: '.art-slider-prev-2',
+    nextEl: '.see-slider-next',
+    prevEl: '.see-slider-prev',
   },
   // breakpoints: {
   //   768: {
