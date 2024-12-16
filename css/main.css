@@ -265,6 +265,27 @@ section {
   margin-bottom: 10px;
 }
 
+.content-slide__title {
+  font-family: "Cormorant SC";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.06px;
+  margin-top: 10px;
+}
+
+.content-slide__status {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.53px;
+  text-align: left;
+}
+
 footer {
   padding-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    max-width: calc(100% - 60px);
+  }
 }/*# sourceMappingURL=main.css.map */
