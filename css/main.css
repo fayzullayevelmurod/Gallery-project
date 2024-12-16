@@ -55,6 +55,76 @@ body {
   margin-bottom: 20px;
 }
 
+.desc {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: "Cormorant", sans-serif;
+}
+.desc span {
+  font-family: "Cormorant SC", sans-serif;
+}
+
+.desc-title {
+  font-family: "Cormorant SC", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.91px;
+  text-align: center;
+}
+
+.desc-link {
+  font-family: "Cormorant";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.desc-link::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+
+.x-text {
+  font-family: "Cormorant SC", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  display: block;
+}
+
+.big-close__btn {
+  width: 200px;
+  height: 200px;
+}
+.big-close__btn img,
+.big-close__btn svg {
+  width: 170px;
+  height: 170px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
 .header {
   padding-top: 100px;
   text-align: center;
@@ -77,43 +147,76 @@ section {
 .art-section .main-container {
   position: relative;
 }
-.art-section .art-slider-prev,
-.art-section .art-slider-next {
+.art-section .swiper-slide .small-img {
+  height: 186px;
+}
+.art-section .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 388px;
+}
+
+.slider-next__btn,
+.slider-prev__btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
 }
-.art-section .art-slider-prev rect,
-.art-section .art-slider-next rect {
+.slider-next__btn rect,
+.slider-prev__btn rect {
   fill: rgba(0, 0, 0, 0.8980392157);
   transition: all 0.2s linear;
 }
-.art-section .art-slider-prev .change-color,
-.art-section .art-slider-next .change-color {
+.slider-next__btn .change-color,
+.slider-prev__btn .change-color {
   transition: all 0.2s linear;
   stroke: #fff;
 }
-.art-section .art-slider-prev.white-btn rect,
-.art-section .art-slider-next.white-btn rect {
+.slider-next__btn.white-btn rect,
+.slider-prev__btn.white-btn rect {
   fill: #fff;
 }
-.art-section .art-slider-prev.white-btn .change-color,
-.art-section .art-slider-next.white-btn .change-color {
+.slider-next__btn.white-btn .change-color,
+.slider-prev__btn.white-btn .change-color {
   stroke: #000;
 }
-.art-section .art-slider-prev {
+
+.slider-prev__btn {
   left: -160px;
 }
-.art-section .art-slider-next {
+
+.slider-next__btn {
   right: -160px;
 }
-.art-section .art-slider-next svg {
+.slider-next__btn svg {
   transform: rotate(180deg);
 }
-.art-section .swiper-button-disabled rect {
+
+.swiper-button-disabled rect {
   fill: transparent;
 }
-.art-section .swiper-button-disabled .change-color {
+.swiper-button-disabled .change-color {
   stroke: #000;
+}
+
+.see-art__slider-img {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.see-art .slider-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: underline;
+  margin: 10px 0;
+}
+.see-art .slider-desc {
+  font-family: "Cormorant", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
 }/*# sourceMappingURL=main.css.map */
