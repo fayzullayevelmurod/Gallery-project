@@ -481,6 +481,7 @@ footer {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+  text-align: left;
 }
 .text-section .gallery-slider-2 {
   margin: 50px 0;
@@ -653,9 +654,6 @@ footer {
     display: block;
     width: 100% !important;
   }
-  .modal-img {
-    display: none;
-  }
   .modal .box {
     padding: 40px;
   }
@@ -665,7 +663,10 @@ footer {
   }
   .modal .modal-close {
     left: 0;
-    top: -80px;
+    top: 0;
+  }
+  .modal .modal-close svg line {
+    stroke: #000;
   }
 }
 @media (max-width: 768px) {
@@ -703,5 +704,46 @@ footer {
   }
   .text-section .gallery-slider-2 img {
     height: 150px;
+  }
+}
+@media (max-width: 700px) {
+  .modal-img {
+    width: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 0;
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+  }
+  .modal-info {
+    align-items: stretch;
+  }
+  .modal-info {
+    background: url(../images/modal-bg.png) no-repeat, #000;
+    background-position: top left;
+    background-size: 100% 100%;
+  }
+  .modal .box {
+    background: #000;
+    padding: 40px 30px 48px 20px;
+  }
+  .modal.show .modal-dialog {
+    max-width: 100% !important;
+  }
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-content input {
+  border-radius: 0;
+  border: 1px solid #fff;
+}
+
+@media (min-width: 768px) {
+  header:not(.home-page) a {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
