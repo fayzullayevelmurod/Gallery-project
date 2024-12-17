@@ -43,6 +43,20 @@
       width: 100% !important;
     }
   }
+  .modal-img {
+    display: none;
+  }
+  .modal .box {
+    padding: 40px;
+  }
+  .modal.show .modal-dialog {
+    max-width: calc(100% - 60px) !important;
+    margin: 0 auto;
+  }
+  .modal .modal-close {
+    left: 0;
+    top: -80px;
+  }
 }
 
 @media (max-width: 768px) {
