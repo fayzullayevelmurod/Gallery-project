@@ -66,6 +66,28 @@ const artSwiper22 = new Swiper('.art-slider-2', {
   },
   // watchOverflow: false,
 });
+// art-slider-art-work
+const artSwiperArtWork = new Swiper('.art-slider-art-work', {
+  slidesPerView: 3,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '.work-slider-next',
+    prevEl: '.work-slider-prev',
+  },
+  speed: 700,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+    },
+    700: {
+      slidesPerView: 2.2,
+    },
+    900: {
+      slidesPerView: 3.5,
+    },
+  },
+  // watchOverflow: false,
+});
 // art-slider-4
 const artSwiper4 = new Swiper('.art-slider-4', {
   slidesPerView: 5,
